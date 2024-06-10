@@ -4,6 +4,8 @@ $updcount = filter_input(INPUT_POST,'id',FILTER_VALIDATE_INT);
 $sales = filter_input(INPUT_POST,'sales');
 
 
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
 $mysqli = new mysqli('localhost', 'username', 'password', 'database_name');
 
 if ($mysqli->connect_error) {
