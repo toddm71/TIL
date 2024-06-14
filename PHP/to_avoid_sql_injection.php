@@ -37,4 +37,5 @@ while($stmt->fetch()){
 $stmt->close();
 
 $result = json_encode($arr);
+
 ?>
